@@ -112,9 +112,9 @@ export const deleteBook = async (
 
     if (book) {
       await deleteBookById(book.id);
-      return res.status(204).send(); // or use res.status(204).end();
+      return res.status(204).send();
     } else {
-      return res.status(404).send("Book not found"); // Adjust status and message accordingly
+      return res.status(404).send("Book not found"); 
     }
   } catch (error) {
     console.error(error);
